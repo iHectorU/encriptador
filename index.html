@@ -2,34 +2,36 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Encriptador</title>
-    <!--<link rel="stylesheet" href="css/reset.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
 </head>
 <body>
     <header>
         <img src="imagenes/Logo.svg" alt="Logo de Alura" class="logo">
     </header>
-    <main>
-        <secton>
-            <textarea cols="30" rows="10" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
-            <div>
-                <h6 class="info">Solo letras minúsculas y sin acentos</h6>
-            </div>
+    <main class="contenedor">
+        <section class="s1">
+            <input type="text" class="textoIngresado" placeholder="Ingrese el texto aquí">
+            <img src="imagenes/advertencia.svg" alt="" class="advertencia">
             <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="boton-encriptar" value="Encriptar">Encriptar</button>
+                <button class="boton-desencriptar">Desencriptar</button>
             </div>
-        </secton>
-        <secton>
-            <textarea cols="20" rows="10" class="mensaje"></textarea>
-            <div>
-                <button class="btn-copiar">Copiar</button>
+            
+        </section>
+        <section class="rectangulo">
+            <img src="imagenes/Muñeco.svg" alt="" class="muñeco">
+            <div class="cajaTextos">
+                <p class="texto1">Ningún mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-        </secton>
+        </section>
     </main>
+    <footer></footer>
 </body>
 </html>
